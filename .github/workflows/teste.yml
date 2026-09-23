@@ -11,6 +11,6 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
       - name: Dizer olá
-        run: echo "Pipeline rodando com sucesso!"
+        run: comando-que-nao-existe
       - name: Verificar arquivos do repositório
         run: ls -la
