@@ -1,0 +1,16 @@
+name: Teste CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      - name: Dizer olá
+        run: echo "Pipeline rodando com sucesso!"
+      - name: Verificar arquivos do repositório
+        run: ls -la
